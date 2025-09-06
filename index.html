@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 
 <head>
@@ -162,11 +163,11 @@
 
         @keyframes pulseGlow {
             0% {
-                box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+                box-shadow: 0 0 2px rgba(34, 197, 94, 0.4);
             }
 
             100% {
-                box-shadow: 0 0 40px rgba(34, 197, 94, 0.8);
+                box-shadow: 0 0 10px rgba(34, 197, 94, 0.8);
             }
         }
 
@@ -204,18 +205,15 @@
             }
         }
 
-        @keyframes fillLine {
-            0% {
-                height: 0%;
-            }
+        .gradient-text {
+            background: linear-gradient(135deg, #22c55e 0%, #14b8a6 50%, #0ea5e9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-            50% {
-                height: 50%;
-            }
-
-            100% {
-                height: 100%;
-            }
+        .gradient-bg {
+            background: linear-gradient(135deg, #22c55e 0%, #14b8a6 50%, #0ea5e9 100%);
         }
 
         .glass-effect {
@@ -269,12 +267,12 @@
 
 <body class="font-inter bg-white text-neutral-900 antialiased">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-white/20 backdrop-blur-xl border-b border-white/30 shadow-sm">
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-neutral-200/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
+                    <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center animate-pulse-glow">
                         <span class="text-white font-bold text-sm">A</span>
                     </div>
                     <span class="text-xl font-bold text-neutral-900">Abosure</span>
@@ -300,7 +298,7 @@
                         Connexion
                     </button>
                     <button
-                        class="px-6 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-all font-medium transform hover:scale-105">
+                        class="px-6 py-2 gradient-bg text-white rounded-lg hover:shadow-lg transition-all font-medium transform hover:scale-105">
                         Essai gratuit
                     </button>
                 </div>
@@ -324,7 +322,7 @@
                 <div class="animate-fade-in-up">
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">
                         Vos projets en Afrique,
-                        <span class="text-primary-500">sous contrôle</span>
+                        <span class="gradient-text">sous contrôle</span>
                         depuis l'Europe
                     </h1>
 
@@ -336,12 +334,12 @@
 
                     <div class="flex flex-col sm:flex-row gap-4 mb-8">
                         <button
-                            class="px-8 py-4 bg-primary-500 text-white rounded-xl hover:bg-primary-600 transition-all font-semibold text-lg transform hover:scale-105">
+                            class="px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105 animate-pulse-glow gradient-bg">
                             Démarrer gratuitement
                         </button>
 
                         <button
-                            class="px-8 py-4 border-2 border-primary-500 text-primary-700 rounded-xl hover:bg-primary-50 transition-all font-semibold text-lg transform hover:scale-105">
+                            class="px-8 py-4 border-2 border-primary-300 text-primary-700 rounded-xl hover:border-primary-500 hover:text-primary-600 transition-all font-semibold text-lg transform hover:scale-105">
                             Voir la démo
                         </button>
                     </div>
@@ -369,12 +367,12 @@
                 <!-- Hero Visual -->
                 <div class="relative animate-fade-in">
                     <div
-                        class="relative z-10 bg-white rounded-2xl p-6 transform rotate-2 hover:rotate-0 transition-transform duration-300 animate-float">
+                        class="relative z-10 bg-white rounded-2xl shadow-2xl p-6 transform rotate-2 hover:rotate-0 transition-transform duration-300 animate-float">
                         <div
                             class="bg-gradient-to-br from-primary-100 to-secondary-100 rounded-xl h-64 flex items-center justify-center mb-4">
                             <div class="text-center">
                                 <div
-                                    class="w-16 h-16 bg-primary-500 rounded-full mx-auto mb-4 flex items-center justify-center animate-bounce-slow">
+                                    class="w-16 h-16 gradient-bg rounded-full mx-auto mb-4 flex items-center justify-center animate-bounce-slow">
                                     <svg class="w-8 h-8 text-white animate-rotate-slow" fill="none"
                                         stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -452,7 +450,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
                 <div
-                    class="bg-white rounded-2xl p-8 border border-primary-100 transform hover:scale-105 animate-scale-in">
+                    class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-primary-100 transform hover:scale-105 animate-scale-in">
                     <div
                         class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center mb-6 group-hover:animate-bounce">
                         <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -472,7 +470,7 @@
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="bg-white rounded-2xl p-8 border border-secondary-100 transform hover:scale-105 animate-scale-in"
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-secondary-100 transform hover:scale-105 animate-scale-in"
                     style="animation-delay: 0.1s">
                     <div class="w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -492,7 +490,7 @@
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="bg-white rounded-2xl p-8 border border-accent-100 transform hover:scale-105 animate-scale-in"
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-accent-100 transform hover:scale-105 animate-scale-in"
                     style="animation-delay: 0.2s">
                     <div class="w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -513,7 +511,7 @@
                 </div>
 
                 <!-- Feature 4 -->
-                <div class="bg-white rounded-2xl p-8 border border-primary-200 transform hover:scale-105 animate-scale-in"
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-primary-200 transform hover:scale-105 animate-scale-in"
                     style="animation-delay: 0.3s">
                     <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -533,7 +531,7 @@
                 </div>
 
                 <!-- Feature 5 -->
-                <div class="bg-white rounded-2xl p-8 border border-secondary-200 transform hover:scale-105 animate-scale-in"
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-secondary-200 transform hover:scale-105 animate-scale-in"
                     style="animation-delay: 0.4s">
                     <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -553,7 +551,7 @@
                 </div>
 
                 <!-- Feature 6 -->
-                <div class="bg-white rounded-2xl p-8 border border-accent-200 transform hover:scale-105 animate-scale-in"
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-accent-200 transform hover:scale-105 animate-scale-in"
                     style="animation-delay: 0.5s">
                     <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -577,7 +575,10 @@
 
     <!-- How It Works -->
     <section id="how-it-works" class="py-20 bg-white relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <!-- Decorative Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-white via-primary-25 to-secondary-25 opacity-50"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 animate-fade-in-up">
                     Comment ça marche
@@ -587,73 +588,53 @@
                 </p>
             </div>
 
-            <!-- Vertical Steps with Animated Lines -->
-            <div class="relative">
-                <!-- Animated connecting line -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 top-20 bottom-20 w-1">
+            <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+                <!-- Step 1 -->
+                <div class="text-center animate-scale-in">
                     <div
-                        class="w-full h-full bg-gradient-to-b from-primary-200 via-secondary-200 to-accent-200 rounded-full">
-                        <div class="w-full bg-gradient-to-b from-primary-500 via-secondary-500 to-accent-500 rounded-full animate-pulse"
-                            style="height: 0%; animation: fillLine 3s ease-in-out infinite;"></div>
+                        class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-slow">
+                        <span class="text-2xl font-bold text-white">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Créez votre projet</h3>
+                    <p class="text-neutral-600 mb-6">Définissez vos tâches, budget et timeline. Invitez votre équipe
+                        locale
+                        et assignez les responsabilités.</p>
+                    <div
+                        class="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-lg p-4 transform hover:scale-105 transition-transform">
+                        <div class="text-sm text-neutral-500 mb-2">Configuration moyenne</div>
+                        <div class="font-semibold text-primary-600">5 minutes</div>
                     </div>
                 </div>
 
-                <div class="space-y-20">
-                    <!-- Step 1 -->
-                    <div class="flex items-center animate-scale-in">
-                        <div class="flex-1 text-right pr-8">
-                            <h3 class="text-2xl font-semibold text-neutral-900 mb-4">Créez votre projet</h3>
-                            <p class="text-neutral-600 mb-6">Définissez vos tâches, budget et timeline. Invitez votre
-                                équipe locale et assignez les responsabilités.</p>
-                            <div class="inline-block bg-primary-50 rounded-lg p-4">
-                                <div class="text-sm text-neutral-500 mb-2">Configuration moyenne</div>
-                                <div class="font-semibold text-primary-600 text-xl">5 minutes</div>
-                            </div>
-                        </div>
-                        <div class="relative z-10">
-                            <div class="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center">
-                                <span class="text-2xl font-bold text-white">1</span>
-                            </div>
-                        </div>
-                        <div class="flex-1 pl-8"></div>
+                <!-- Step 2 -->
+                <div class="text-center animate-scale-in" style="animation-delay: 0.2s">
+                    <div
+                        class="w-16 h-16 bg-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-glow">
+                        <span class="text-2xl font-bold text-white">2</span>
                     </div>
-
-                    <!-- Step 2 -->
-                    <div class="flex items-center animate-scale-in" style="animation-delay: 0.2s">
-                        <div class="flex-1 pr-8"></div>
-                        <div class="relative z-10">
-                            <div class="w-16 h-16 bg-secondary-500 rounded-full flex items-center justify-center">
-                                <span class="text-2xl font-bold text-white">2</span>
-                            </div>
-                        </div>
-                        <div class="flex-1 text-left pl-8">
-                            <h3 class="text-2xl font-semibold text-neutral-900 mb-4">Recevez les preuves</h3>
-                            <p class="text-neutral-600 mb-6">Votre équipe envoie photos et vidéos géolocalisées. L'IA
-                                valide automatiquement l'authenticité.</p>
-                            <div class="inline-block bg-secondary-50 rounded-lg p-4">
-                                <div class="text-sm text-neutral-500 mb-2">Validation automatique</div>
-                                <div class="font-semibold text-secondary-600 text-xl">Temps réel</div>
-                            </div>
-                        </div>
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Recevez les preuves</h3>
+                    <p class="text-neutral-600 mb-6">Votre équipe envoie photos et vidéos géolocalisées. L'IA valide
+                        automatiquement l'authenticité.</p>
+                    <div
+                        class="bg-gradient-to-br from-secondary-50 to-primary-50 rounded-lg p-4 transform hover:scale-105 transition-transform">
+                        <div class="text-sm text-neutral-500 mb-2">Validation automatique</div>
+                        <div class="font-semibold text-secondary-600">Temps réel</div>
                     </div>
+                </div>
 
-                    <!-- Step 3 -->
-                    <div class="flex items-center animate-scale-in" style="animation-delay: 0.4s">
-                        <div class="flex-1 text-right pr-8">
-                            <h3 class="text-2xl font-semibold text-neutral-900 mb-4">Pilotez à distance</h3>
-                            <p class="text-neutral-600 mb-6">Dashboard temps réel avec KPI, budget tracking et
-                                communication équipe. Prenez les bonnes décisions.</p>
-                            <div class="inline-block bg-accent-50 rounded-lg p-4">
-                                <div class="text-sm text-neutral-500 mb-2">ROI moyen constaté</div>
-                                <div class="font-semibold text-accent-600 text-xl">+34%</div>
-                            </div>
-                        </div>
-                        <div class="relative z-10">
-                            <div class="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center">
-                                <span class="text-2xl font-bold text-white">3</span>
-                            </div>
-                        </div>
-                        <div class="flex-1 pl-8"></div>
+                <!-- Step 3 -->
+                <div class="text-center animate-scale-in" style="animation-delay: 0.4s">
+                    <div
+                        class="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-float">
+                        <span class="text-2xl font-bold text-white">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Pilotez à distance</h3>
+                    <p class="text-neutral-600 mb-6">Dashboard temps réel avec KPI, budget tracking et communication
+                        équipe. Prenez les bonnes décisions.</p>
+                    <div
+                        class="bg-gradient-to-br from-accent-50 to-primary-50 rounded-lg p-4 transform hover:scale-105 transition-transform">
+                        <div class="text-sm text-neutral-500 mb-2">ROI moyen constaté</div>
+                        <div class="font-semibold text-accent-600">+34%</div>
                     </div>
                 </div>
             </div>
@@ -663,7 +644,7 @@
     <!-- Testimonials Carousel -->
     <section class="py-20 bg-gradient-to-br from-secondary-50 to-primary-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="bg-white rounded-2xl p-8 md:p-12 relative">
+            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg relative">
                 <div id="testimonials-container" class="relative">
                     <!-- Testimonial 1 -->
                     <div class="testimonial-slide active">
@@ -823,6 +804,9 @@
 
     <!-- Pricing Section -->
     <section id="pricing" class="py-20 bg-white relative overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute inset-0 bg-gradient-to-br from-white via-primary-25 to-secondary-25 opacity-30"></div>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 animate-fade-in-up">
@@ -830,8 +814,6 @@
                 </h2>
                 <p class="text-xl text-neutral-600 max-w-3xl mx-auto animate-slide-in-right">
                     Commencez gratuitement, payez seulement quand vous scaler. Économisez en moyenne €8,500 par projet
-                    mal contrôCommencez gratuitement, payez seulement quand vous scaler. Économisez en moyenne €8,500
-                    par projet
                     mal contrôlé évité.
                 </p>
             </div>
@@ -893,15 +875,16 @@
                     </ul>
 
                     <button
-                        class="w-full px-6 py-3 border-2 border-primary-500 text-primary-700 rounded-xl hover:bg-primary-50 transition-all font-semibold transform hover:scale-105">
+                        class="w-full px-6 py-3 border-2 border-primary-300 text-primary-700 rounded-xl hover:border-primary-500 hover:text-primary-600 transition-all font-semibold transform hover:scale-105">
                         Essai gratuit 14 jours
                     </button>
                 </div>
 
                 <!-- Professional Plan - Popular -->
-                <div class="bg-primary-500 rounded-2xl p-8 text-white relative transform scale-105">
+                <div class="gradient-bg rounded-2xl p-8 text-white relative transform scale-105 animate-pulse-glow">
                     <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <span class="bg-secondary-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                        <span
+                            class="bg-secondary-500 text-white px-4 py-1 rounded-full text-sm font-medium animate-bounce">
                             Plus populaire
                         </span>
                     </div>
@@ -1020,7 +1003,7 @@
                     </ul>
 
                     <button
-                        class="w-full px-6 py-3 border-2 border-accent-500 text-accent-700 rounded-xl hover:bg-accent-50 transition-all font-semibold transform hover:scale-105">
+                        class="w-full px-6 py-3 border-2 border-accent-300 text-accent-700 rounded-xl hover:border-accent-500 hover:text-accent-600 transition-all font-semibold transform hover:scale-105">
                         Contactez-nous
                     </button>
                 </div>
@@ -1038,7 +1021,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-primary-500 relative overflow-hidden">
+    <section class="py-20 gradient-bg relative overflow-hidden">
         <!-- Animated Background Elements -->
         <div class="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-float"></div>
         <div class="absolute bottom-20 right-20 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-bounce-slow"></div>
@@ -1048,14 +1031,14 @@
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in-up">
                 Prêt à transformer vos projets en Afrique ?
             </h2>
-            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto animate-slide-in-right">
+            <p class="text-xl text-green-100 mb-8 max-w-2xl mx-auto animate-slide-in-right">
                 Rejoignez 200+ entrepreneurs diaspora qui utilisent Abosure pour gérer leurs projets avec confiance et
                 efficacité.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                 <button
-                    class="px-8 py-4 bg-white text-primary-600 rounded-xl hover:bg-neutral-50 transition-all font-semibold text-lg transform hover:scale-105">
+                    class="px-8 py-4 bg-white text-primary-600 rounded-xl hover:bg-neutral-50 transition-all font-semibold text-lg shadow-lg transform hover:scale-105 animate-pulse-glow">
                     Essai gratuit 14 jours
                 </button>
                 <button
@@ -1064,7 +1047,7 @@
                 </button>
             </div>
 
-            <p class="text-primary-100 text-sm animate-fade-in">
+            <p class="text-green-100 text-sm animate-fade-in">
                 Configuration en 5 minutes • Support en français • Données hébergées en Europe
             </p>
         </div>
@@ -1077,7 +1060,7 @@
                 <!-- Company Info -->
                 <div class="md:col-span-2">
                     <div class="flex items-center space-x-2 mb-6">
-                        <div class="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
+                        <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center animate-pulse-glow">
                             <span class="text-white font-bold text-sm">A</span>
                         </div>
                         <span class="text-xl font-bold">Abosure</span>
@@ -1194,11 +1177,11 @@
         window.addEventListener('scroll', function () {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
-                nav.classList.add('bg-white/40');
-                nav.classList.remove('bg-white/20');
+                nav.classList.add('bg-white', 'shadow-lg');
+                nav.classList.remove('bg-white/90');
             } else {
-                nav.classList.add('bg-white/20');
-                nav.classList.remove('bg-white/40');
+                nav.classList.add('bg-white/90');
+                nav.classList.remove('bg-white', 'shadow-lg');
             }
         });
 
@@ -1295,10 +1278,12 @@
         document.querySelectorAll('#features .bg-white').forEach(card => {
             card.addEventListener('mouseenter', function () {
                 this.style.transform = 'scale(1.05) translateY(-5px)';
+                this.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
             });
 
             card.addEventListener('mouseleave', function () {
                 this.style.transform = 'scale(1) translateY(0)';
+                this.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
             });
         });
 
@@ -1331,16 +1316,16 @@
         });
 
         // Dynamic pricing hover effects
-        document.querySelectorAll('#pricing .bg-white, #pricing .bg-primary-500').forEach(card => {
+        document.querySelectorAll('#pricing .bg-white, #pricing .gradient-bg').forEach(card => {
             card.addEventListener('mouseenter', function () {
-                if (!this.classList.contains('bg-primary-500')) {
+                if (!this.classList.contains('gradient-bg')) {
                     this.style.borderColor = 'var(--primary-400)';
                 }
                 this.style.transform = 'scale(1.03) translateY(-8px)';
             });
 
             card.addEventListener('mouseleave', function () {
-                if (!this.classList.contains('bg-primary-500')) {
+                if (!this.classList.contains('gradient-bg')) {
                     this.style.borderColor = '';
                 }
                 this.style.transform = this.classList.contains('scale-105') ? 'scale(1.05)' : 'scale(1)';
@@ -1383,6 +1368,15 @@
         window.addEventListener('load', function () {
             const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
             console.log('Page load time:', loadTime + 'ms');
+
+            // Track Core Web Vitals
+            if ('web-vital' in window) {
+                getCLS(console.log);
+                getFID(console.log);
+                getFCP(console.log);
+                getLCP(console.log);
+                getTTFB(console.log);
+            }
 
             // Lazy loading for images
             if ('IntersectionObserver' in window) {
@@ -1429,10 +1423,10 @@
             const nav = document.querySelector('nav .flex.justify-between');
             const mobileMenuToggle = document.createElement('button');
             mobileMenuToggle.innerHTML = `
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                                    </svg>
-                                `;
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            `;
             mobileMenuToggle.className = 'md:hidden p-2 text-neutral-600 hover:text-primary-600 transition-colors';
 
             // Add to navigation
@@ -1455,28 +1449,32 @@
             document.body.classList.remove('keyboard-nav');
         });
 
-        // Accessibility improvements
-        document.querySelectorAll('button').forEach(button => {
-            if (!button.getAttribute('aria-label') && !button.textContent.trim()) {
-                button.setAttribute('aria-label', 'Button');
+        // Add focus styles for keyboard navigation
+        const style = document.createElement('style');
+        style.textContent = `
+            .keyboard-nav button:focus,
+            .keyboard-nav a:focus {
+                outline: 2px solid #22c55e;
+                outline-offset: 2px;
             }
-        });
-
-        // Add loading states for buttons
-        document.querySelectorAll('button').forEach(button => {
-            button.addEventListener('click', function () {
-                if (this.textContent.includes('Essai gratuit') || this.textContent.includes('Démarrer')) {
-                    const originalText = this.textContent;
-                    this.textContent = 'Chargement...';
-                    this.disabled = true;
-
-                    setTimeout(() => {
-                        this.textContent = originalText;
-                        this.disabled = false;
-                    }, 2000);
+            
+            .ripple {
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.6);
+                pointer-events: none;
+                transform: scale(0);
+                animation: ripple-animation 0.6s linear;
+            }
+            
+            @keyframes ripple-animation {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
                 }
-            });
-        });
+            }
+        `;
+        document.head.appendChild(style);
 
         // Initialize all animations on page load
         document.addEventListener('DOMContentLoaded', function () {
@@ -1504,6 +1502,29 @@
             if (slides.length > 1) {
                 // Testimonial functionality already initialized above
             }
+        });
+
+        // Accessibility improvements
+        document.querySelectorAll('button').forEach(button => {
+            if (!button.getAttribute('aria-label') && !button.textContent.trim()) {
+                button.setAttribute('aria-label', 'Button');
+            }
+        });
+
+        // Add loading states for buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function () {
+                if (this.textContent.includes('Essai gratuit') || this.textContent.includes('Démarrer')) {
+                    const originalText = this.textContent;
+                    this.textContent = 'Chargement...';
+                    this.disabled = true;
+
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.disabled = false;
+                    }, 2000);
+                }
+            });
         });
 
         console.log('✨ Abosure Landing Page fully loaded with enhanced animations!');
@@ -1543,28 +1564,6 @@
 
         .text-shadow {
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .keyboard-nav button:focus,
-        .keyboard-nav a:focus {
-            outline: 2px solid #22c55e;
-            outline-offset: 2px;
-        }
-
-        .ripple {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.6);
-            pointer-events: none;
-            transform: scale(0);
-            animation: ripple-animation 0.6s linear;
-        }
-
-        @keyframes ripple-animation {
-            to {
-                transform: scale(4);
-                opacity: 0;
-            }
         }
     </style>
 </body>

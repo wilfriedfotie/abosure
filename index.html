@@ -49,44 +49,52 @@
                     },
                     colors: {
                         primary: {
-                            50: '#fffaf3',
-                            100: '#fef3e1',
-                            200: '#fdd9a8',
-                            300: '#fac879',
-                            400: '#f4a942',
-                            500: '#e98c1a',  // Couleur principale (terre de soleil)
-                            600: '#cf7312',
-                            700: '#a95b0d',
-                            800: '#87480a',
-                            900: '#6b3908',
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',  // Couleur principale - vert moderne
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
                         },
                         secondary: {
-                            50: '#fefcf5',
-                            100: '#fcf3d7',
-                            200: '#fae7af',
-                            300: '#f6d47d',
-                            400: '#eeb84a',
-                            500: '#d89c20',  // Ambre plus doux
-                            600: '#b77d17',
-                            700: '#915f11',
-                            800: '#72490d',
-                            900: '#5a3a0a',
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',  // Vert turquoise
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
                         },
-                        earth: {
-                            50: '#fdf8f6',
-                            100: '#f2e8e5',
-                            200: '#eaddd7',
-                            300: '#e0cec7',
-                            400: '#d2bab0',
-                            500: '#bfa094',
-                            600: '#a18072',
-                            700: '#977669',
-                            800: '#846358',
-                            900: '#43302b',
+                        accent: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',  // Bleu pour les accents
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
                         },
-                        sunset: {
-                            400: '#ff6b6b',
-                            500: '#ee5a52',
+                        neutral: {
+                            50: '#fafafa',
+                            100: '#f5f5f5',
+                            200: '#e5e5e5',
+                            300: '#d4d4d4',
+                            400: '#a3a3a3',
+                            500: '#737373',
+                            600: '#525252',
+                            700: '#404040',
+                            800: '#262626',
+                            900: '#171717',
                         }
                     },
                     animation: {
@@ -155,11 +163,11 @@
 
         @keyframes pulseGlow {
             0% {
-                box-shadow: 0 0 20px rgba(255, 139, 41, 0.4);
+                box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
             }
 
             100% {
-                box-shadow: 0 0 40px rgba(255, 139, 41, 0.8);
+                box-shadow: 0 0 40px rgba(34, 197, 94, 0.8);
             }
         }
 
@@ -198,14 +206,14 @@
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #ff8b29 0%, #f59e0b 50%, #ee5a52 100%);
+            background: linear-gradient(135deg, #22c55e 0%, #14b8a6 50%, #0ea5e9 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .gradient-bg {
-            background: linear-gradient(135deg, #ff8b29 0%, #f59e0b 50%, #ee5a52 100%);
+            background: linear-gradient(135deg, #22c55e 0%, #14b8a6 50%, #0ea5e9 100%);
         }
 
         .glass-effect {
@@ -257,9 +265,9 @@
     </script>
 </head>
 
-<body class="font-inter bg-white text-gray-900 antialiased">
+<body class="font-inter bg-white text-neutral-900 antialiased">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-primary-200/50">
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-neutral-200/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
@@ -267,21 +275,21 @@
                     <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center animate-pulse-glow">
                         <span class="text-white font-bold text-sm">A</span>
                     </div>
-                    <span class="text-xl font-bold text-gray-900">Abosure</span>
+                    <span class="text-xl font-bold text-neutral-900">Abosure</span>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#features"
-                        class="text-gray-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Fonctionnalités</a>
+                        class="text-neutral-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Fonctionnalités</a>
                     <a href="#how-it-works"
-                        class="text-gray-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Comment
+                        class="text-neutral-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Comment
                         ça
                         marche</a>
                     <a href="#pricing"
-                        class="text-gray-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Tarifs</a>
+                        class="text-neutral-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Tarifs</a>
                     <a href="#contact"
-                        class="text-gray-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Contact</a>
+                        class="text-neutral-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Contact</a>
                 </div>
 
                 <!-- CTA Buttons -->
@@ -306,30 +314,29 @@
             <div
                 class="absolute top-40 right-20 w-32 h-32 bg-secondary-300/20 rounded-full blur-2xl animate-bounce-slow">
             </div>
-            <div class="absolute bottom-20 left-1/3 w-16 h-16 bg-sunset-400/20 rounded-full blur-lg animate-pulse">
+            <div class="absolute bottom-20 left-1/3 w-16 h-16 bg-accent-400/20 rounded-full blur-lg animate-pulse">
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Hero Content -->
                 <div class="animate-fade-in-up">
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">
                         Vos projets en Afrique,
                         <span class="gradient-text">sous contrôle</span>
                         depuis l'Europe
                     </h1>
 
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed animate-slide-in-right">
+                    <p class="text-xl text-neutral-600 mb-8 leading-relaxed animate-slide-in-right">
                         La seule plateforme qui transforme votre smartphone en œil de surveillance pour vos projets.
                         Preuves authentifiées par géolocalisation, suivi financier intelligent et marketplace de workers
                         qualifiés.
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                        <button class="px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105 animate-pulse-glow
-                             bg-gradient-to-br from-[#f4a942] via-[#e98c1a] to-[#43302b]">
+                        <button
+                            class="px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105 animate-pulse-glow gradient-bg">
                             Démarrer gratuitement
                         </button>
-
 
                         <button
                             class="px-8 py-4 border-2 border-primary-300 text-primary-700 rounded-xl hover:border-primary-500 hover:text-primary-600 transition-all font-semibold text-lg transform hover:scale-105">
@@ -337,7 +344,7 @@
                         </button>
                     </div>
 
-                    <div class="flex items-center space-x-6 text-sm text-gray-500">
+                    <div class="flex items-center space-x-6 text-sm text-neutral-500">
                         <div class="flex items-center space-x-2 animate-slide-up">
                             <svg class="w-5 h-5 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
@@ -375,16 +382,16 @@
                                             d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                     </svg>
                                 </div>
-                                <h3 class="font-semibold text-gray-900 mb-2">Preuve géolocalisée</h3>
-                                <p class="text-sm text-gray-600">Validation automatique par IA</p>
+                                <h3 class="font-semibold text-neutral-900 mb-2">Preuve géolocalisée</h3>
+                                <p class="text-sm text-neutral-600">Validation automatique par IA</p>
                             </div>
                         </div>
                         <div class="flex items-center justify-between">
                             <div class="flex items-center space-x-2">
                                 <div class="w-3 h-3 bg-secondary-500 rounded-full animate-pulse"></div>
-                                <span class="text-sm font-medium text-gray-700">Score: 94%</span>
+                                <span class="text-sm font-medium text-neutral-700">Score: 94%</span>
                             </div>
-                            <span class="text-xs text-gray-500">Il y a 2 min</span>
+                            <span class="text-xs text-neutral-500">Il y a 2 min</span>
                         </div>
                     </div>
                     <div
@@ -396,10 +403,11 @@
     </section>
 
     <!-- Social Proof with Auto-Scrolling -->
-    <section class="py-12 bg-white border-b border-primary-200 overflow-hidden">
+    <section class="py-12 bg-white border-b border-neutral-200 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8">
-                <p class="text-gray-500 font-medium animate-fade-in-up">Déjà utilisé par 200+ entrepreneurs diaspora</p>
+                <p class="text-neutral-500 font-medium animate-fade-in-up">Déjà utilisé par 200+ entrepreneurs diaspora
+                </p>
             </div>
             <div id="social-proof-container" class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
                 <div class="flex justify-center social-proof-item" style="animation-delay: 0.1s">
@@ -414,12 +422,12 @@
                 </div>
                 <div class="flex justify-center social-proof-item" style="animation-delay: 0.3s">
                     <div
-                        class="text-2xl font-bold text-earth-400 hover:text-earth-600 transition-colors cursor-pointer transform hover:scale-110">
+                        class="text-2xl font-bold text-accent-400 hover:text-accent-600 transition-colors cursor-pointer transform hover:scale-110">
                         BNP Paribas</div>
                 </div>
                 <div class="flex justify-center social-proof-item" style="animation-delay: 0.4s">
                     <div
-                        class="text-2xl font-bold text-sunset-400 hover:text-sunset-500 transition-colors cursor-pointer transform hover:scale-110">
+                        class="text-2xl font-bold text-primary-500 hover:text-primary-600 transition-colors cursor-pointer transform hover:scale-110">
                         Africa24</div>
                 </div>
             </div>
@@ -430,10 +438,10 @@
     <section id="features" class="py-20 bg-gradient-to-br from-primary-50 to-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 animate-fade-in-up">
                     Tout ce dont vous avez besoin pour réussir
                 </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-in-right">
+                <p class="text-xl text-neutral-600 max-w-3xl mx-auto animate-slide-in-right">
                     Une plateforme complète qui combine preuves authentifiées, gestion financière et marketplace de
                     talents africains
                 </p>
@@ -450,10 +458,11 @@
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Preuves Authentifiées</h3>
-                    <p class="text-gray-600 mb-4">Photos et vidéos géolocalisées avec validation IA anti-fraude. Score
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-3">Preuves Authentifiées</h3>
+                    <p class="text-neutral-600 mb-4">Photos et vidéos géolocalisées avec validation IA anti-fraude.
+                        Score
                         de confiance automatique pour chaque preuve.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
+                    <ul class="text-sm text-neutral-500 space-y-1">
                         <li>• Géolocalisation automatique</li>
                         <li>• Détection anti-fraude IA</li>
                         <li>• Historique immutable</li>
@@ -470,10 +479,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Suivi Financier</h3>
-                    <p class="text-gray-600 mb-4">Liaison automatique tâches-coûts avec alertes budget intelligentes.
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-3">Suivi Financier</h3>
+                    <p class="text-neutral-600 mb-4">Liaison automatique tâches-coûts avec alertes budget intelligentes.
                         Dashboard KPI temps réel.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
+                    <ul class="text-sm text-neutral-500 space-y-1">
                         <li>• Budgets par catégorie</li>
                         <li>• Alertes dépassement</li>
                         <li>• Export comptable auto</li>
@@ -481,19 +490,20 @@
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-earth-100 transform hover:scale-105 animate-scale-in"
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-accent-100 transform hover:scale-105 animate-scale-in"
                     style="animation-delay: 0.2s">
-                    <div class="w-12 h-12 bg-earth-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-earth-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-12 h-12 bg-accent-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Marketplace Workers</h3>
-                    <p class="text-gray-600 mb-4">Réseau de professionnels vérifiés avec système de notation. Matching
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-3">Marketplace Workers</h3>
+                    <p class="text-neutral-600 mb-4">Réseau de professionnels vérifiés avec système de notation.
+                        Matching
                         intelligent par compétences et proximité.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
+                    <ul class="text-sm text-neutral-500 space-y-1">
                         <li>• Workers certifiés</li>
                         <li>• Matching géographique</li>
                         <li>• Système de notation</li>
@@ -501,18 +511,19 @@
                 </div>
 
                 <!-- Feature 4 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-sunset-100 transform hover:scale-105 animate-scale-in"
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-primary-200 transform hover:scale-105 animate-scale-in"
                     style="animation-delay: 0.3s">
-                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-sunset-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M15 17h5l-5 5v-5zM9 17H4l5 5v-5zM16 8a3 3 0 11-6 0 3 3 0 016 0zM12 2v6"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Alertes Intelligentes</h3>
-                    <p class="text-gray-600 mb-4">Notifications temps réel pour urgences projet. Diffusion automatique
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-3">Alertes Intelligentes</h3>
+                    <p class="text-neutral-600 mb-4">Notifications temps réel pour urgences projet. Diffusion
+                        automatique
                         aux travailleurs qualifiés dans la zone.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
+                    <ul class="text-sm text-neutral-500 space-y-1">
                         <li>• Notifications push</li>
                         <li>• Géofencing automatique</li>
                         <li>• Candidatures express</li>
@@ -520,7 +531,7 @@
                 </div>
 
                 <!-- Feature 5 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-primary-100 transform hover:scale-105 animate-scale-in"
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-secondary-200 transform hover:scale-105 animate-scale-in"
                     style="animation-delay: 0.4s">
                     <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -529,10 +540,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Communication Intégrée</h3>
-                    <p class="text-gray-600 mb-4">Chat équipe temps réel avec intégration WhatsApp. Workflow
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-3">Communication Intégrée</h3>
+                    <p class="text-neutral-600 mb-4">Chat équipe temps réel avec intégration WhatsApp. Workflow
                         d'approbation et validation.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
+                    <ul class="text-sm text-neutral-500 space-y-1">
                         <li>• Chat temps réel</li>
                         <li>• Intégration WhatsApp</li>
                         <li>• Workflow validation</li>
@@ -540,7 +551,7 @@
                 </div>
 
                 <!-- Feature 6 -->
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-secondary-100 transform hover:scale-105 animate-scale-in"
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all border border-accent-200 transform hover:scale-105 animate-scale-in"
                     style="animation-delay: 0.5s">
                     <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -549,10 +560,10 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Analytics Avancées</h3>
-                    <p class="text-gray-600 mb-4">Dashboard multi-projets avec KPI temps réel. Reports automatisés et
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-3">Analytics Avancées</h3>
+                    <p class="text-neutral-600 mb-4">Dashboard multi-projets avec KPI temps réel. Reports automatisés et
                         insights performance.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
+                    <ul class="text-sm text-neutral-500 space-y-1">
                         <li>• KPI temps réel</li>
                         <li>• Export PDF/Excel</li>
                         <li>• Benchmarking projets</li>
@@ -569,10 +580,10 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 animate-fade-in-up">
                     Comment ça marche
                 </h2>
-                <p class="text-xl text-gray-600 animate-slide-in-right">
+                <p class="text-xl text-neutral-600 animate-slide-in-right">
                     3 étapes simples pour transformer votre gestion de projet
                 </p>
             </div>
@@ -584,12 +595,13 @@
                         class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce-slow">
                         <span class="text-2xl font-bold text-white">1</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Créez votre projet</h3>
-                    <p class="text-gray-600 mb-6">Définissez vos tâches, budget et timeline. Invitez votre équipe locale
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Créez votre projet</h3>
+                    <p class="text-neutral-600 mb-6">Définissez vos tâches, budget et timeline. Invitez votre équipe
+                        locale
                         et assignez les responsabilités.</p>
                     <div
                         class="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-lg p-4 transform hover:scale-105 transition-transform">
-                        <div class="text-sm text-gray-500 mb-2">Configuration moyenne</div>
+                        <div class="text-sm text-neutral-500 mb-2">Configuration moyenne</div>
                         <div class="font-semibold text-primary-600">5 minutes</div>
                     </div>
                 </div>
@@ -600,12 +612,12 @@
                         class="w-16 h-16 bg-secondary-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-glow">
                         <span class="text-2xl font-bold text-white">2</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Recevez les preuves</h3>
-                    <p class="text-gray-600 mb-6">Votre équipe envoie photos et vidéos géolocalisées. L'IA valide
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Recevez les preuves</h3>
+                    <p class="text-neutral-600 mb-6">Votre équipe envoie photos et vidéos géolocalisées. L'IA valide
                         automatiquement l'authenticité.</p>
                     <div
                         class="bg-gradient-to-br from-secondary-50 to-primary-50 rounded-lg p-4 transform hover:scale-105 transition-transform">
-                        <div class="text-sm text-gray-500 mb-2">Validation automatique</div>
+                        <div class="text-sm text-neutral-500 mb-2">Validation automatique</div>
                         <div class="font-semibold text-secondary-600">Temps réel</div>
                     </div>
                 </div>
@@ -613,16 +625,16 @@
                 <!-- Step 3 -->
                 <div class="text-center animate-scale-in" style="animation-delay: 0.4s">
                     <div
-                        class="w-16 h-16 bg-earth-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-float">
+                        class="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-float">
                         <span class="text-2xl font-bold text-white">3</span>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Pilotez à distance</h3>
-                    <p class="text-gray-600 mb-6">Dashboard temps réel avec KPI, budget tracking et communication
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Pilotez à distance</h3>
+                    <p class="text-neutral-600 mb-6">Dashboard temps réel avec KPI, budget tracking et communication
                         équipe. Prenez les bonnes décisions.</p>
                     <div
-                        class="bg-gradient-to-br from-earth-50 to-sunset-50 rounded-lg p-4 transform hover:scale-105 transition-transform">
-                        <div class="text-sm text-gray-500 mb-2">ROI moyen constaté</div>
-                        <div class="font-semibold text-earth-600">+34%</div>
+                        class="bg-gradient-to-br from-accent-50 to-primary-50 rounded-lg p-4 transform hover:scale-105 transition-transform">
+                        <div class="text-sm text-neutral-500 mb-2">ROI moyen constaté</div>
+                        <div class="font-semibold text-accent-600">+34%</div>
                     </div>
                 </div>
             </div>
@@ -666,7 +678,7 @@
                             </div>
                         </div>
 
-                        <blockquote class="text-xl md:text-2xl text-gray-700 font-medium mb-8 leading-relaxed">
+                        <blockquote class="text-xl md:text-2xl text-neutral-700 font-medium mb-8 leading-relaxed">
                             "Avant Abosure, je perdais 2h par jour à vérifier l'avancement de mes chantiers au Sénégal.
                             Maintenant j'ai une visibilité temps réel et mes projets se terminent 30% plus vite."
                         </blockquote>
@@ -675,8 +687,8 @@
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face&auto=format"
                                 alt="Mamadou Diallo" class="w-16 h-16 rounded-full object-cover">
                             <div class="text-left">
-                                <div class="font-semibold text-gray-900">Mamadou Diallo</div>
-                                <div class="text-gray-600">CEO, DialloCorp - 12 projets gérés</div>
+                                <div class="font-semibold text-neutral-900">Mamadou Diallo</div>
+                                <div class="text-neutral-600">CEO, DialloCorp - 12 projets gérés</div>
                             </div>
                         </div>
                     </div>
@@ -713,7 +725,7 @@
                             </div>
                         </div>
 
-                        <blockquote class="text-xl md:text-2xl text-gray-700 font-medium mb-8 leading-relaxed">
+                        <blockquote class="text-xl md:text-2xl text-neutral-700 font-medium mb-8 leading-relaxed">
                             "Grâce à Abosure, j'ai économisé plus de €15,000 en détectant des problèmes de construction
                             avant qu'ils ne deviennent majeurs. La géolocalisation des preuves m'a sauvé d'une fraude!"
                         </blockquote>
@@ -722,8 +734,8 @@
                             <img src="https://images.unsplash.com/photo-1494790108755-2616b612b5bc?w=64&h=64&fit=crop&crop=face&auto=format"
                                 alt="Aminata Koné" class="w-16 h-16 rounded-full object-cover">
                             <div class="text-left">
-                                <div class="font-semibold text-gray-900">Aminata Koné</div>
-                                <div class="text-gray-600">Investisseur immobilier - 8 projets</div>
+                                <div class="font-semibold text-neutral-900">Aminata Koné</div>
+                                <div class="text-neutral-600">Investisseur immobilier - 8 projets</div>
                             </div>
                         </div>
                     </div>
@@ -760,7 +772,7 @@
                             </div>
                         </div>
 
-                        <blockquote class="text-xl md:text-2xl text-gray-700 font-medium mb-8 leading-relaxed">
+                        <blockquote class="text-xl md:text-2xl text-neutral-700 font-medium mb-8 leading-relaxed">
                             "La marketplace de travailleurs qualifiés m'a permis de trouver les meilleurs artisans en
                             Côte
                             d'Ivoire. Mon hôtel s'est construit 40% plus rapidement que prévu!"
@@ -770,8 +782,8 @@
                             <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=64&h=64&fit=crop&crop=face&auto=format"
                                 alt="Ibrahim Traoré" class="w-16 h-16 rounded-full object-cover">
                             <div class="text-left">
-                                <div class="font-semibold text-gray-900">Ibrahim Traoré</div>
-                                <div class="text-gray-600">Entrepreneur hôtelier - 5 projets</div>
+                                <div class="font-semibold text-neutral-900">Ibrahim Traoré</div>
+                                <div class="text-neutral-600">Entrepreneur hôtelier - 5 projets</div>
                             </div>
                         </div>
                     </div>
@@ -781,9 +793,9 @@
                 <div class="flex justify-center space-x-2 mt-8">
                     <button class="testimonial-dot w-3 h-3 rounded-full bg-primary-500 transition-all"
                         data-slide="0"></button>
-                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition-all"
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-neutral-300 transition-all"
                         data-slide="1"></button>
-                    <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 transition-all"
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-neutral-300 transition-all"
                         data-slide="2"></button>
                 </div>
             </div>
@@ -797,10 +809,10 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 animate-fade-in-up">
                     Tarifs transparents, ROI garanti
                 </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-in-right">
+                <p class="text-xl text-neutral-600 max-w-3xl mx-auto animate-slide-in-right">
                     Commencez gratuitement, payez seulement quand vous scaler. Économisez en moyenne €8,500 par projet
                     mal contrôlé évité.
                 </p>
@@ -811,62 +823,61 @@
                 <div
                     class="bg-white rounded-2xl border-2 border-primary-200 p-8 hover:border-primary-400 transition-all transform hover:scale-105 animate-scale-in">
                     <div class="text-center">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Starter</h3>
-                        <p class="text-gray-600 mb-6">Parfait pour débuter</p>
+                        <h3 class="text-xl font-semibold text-neutral-900 mb-2">Starter</h3>
+                        <p class="text-neutral-600 mb-6">Parfait pour débuter</p>
                         <div class="mb-6">
-                            <span class="text-4xl font-bold text-gray-900">€29</span>
-                            <span class="text-gray-600">/mois</span>
+                            <span class="text-4xl font-bold text-neutral-900">€29</span>
+                            <span class="text-neutral-600">/mois</span>
                         </div>
                     </div>
 
                     <ul class="space-y-4 mb-8">
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-gray-700">1 projet actif</span>
-                            </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-gray-700">5 workers maximum</span>
-                            </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-gray-700">Preuves illimitées</span>
-                            </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-gray-700">Chat équipe</span>
-                            </li>
-                            <li class="flex items-center space-x-3">
-                                <svg class="w-5 h-5 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-gray-700">Support email</span>
-                            </li>
-                        </ul>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-neutral-700">1 projet actif</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-neutral-700">5 workers maximum</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-neutral-700">Preuves illimitées</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-neutral-700">Chat équipe</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-secondary-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-neutral-700">Support email</span>
+                        </li>
+                    </ul>
 
-                        <button
-                            class="w-full px-6 py-3 border-2 border-primary-300 text-primary-700 rounded-xl hover:border-primary-500 hover:text-primary-600 transition-all font-semibold transform hover:scale-105">
-                            Essai gratuit 14 jours
-                        </button>
+                    <button
+                        class="w-full px-6 py-3 border-2 border-primary-300 text-primary-700 rounded-xl hover:border-primary-500 hover:text-primary-600 transition-all font-semibold transform hover:scale-105">
+                        Essai gratuit 14 jours
+                    </button>
                 </div>
 
                 <!-- Professional Plan - Popular -->
@@ -931,78 +942,78 @@
                     </ul>
 
                     <button
-                        class="w-full px-6 py-3 bg-white text-primary-500 rounded-xl hover:bg-gray-50 transition-all font-semibold transform hover:scale-105">
+                        class="w-full px-6 py-3 bg-white text-primary-500 rounded-xl hover:bg-neutral-50 transition-all font-semibold transform hover:scale-105">
                         Essai gratuit 14 jours
                     </button>
                 </div>
 
                 <!-- Enterprise Plan -->
-                <div class="bg-white rounded-2xl border-2 border-earth-200 p-8 hover:border-earth-400 transition-all transform hover:scale-105 animate-scale-in"
+                <div class="bg-white rounded-2xl border-2 border-accent-200 p-8 hover:border-accent-400 transition-all transform hover:scale-105 animate-scale-in"
                     style="animation-delay: 0.2s">
                     <div class="text-center">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Enterprise</h3>
-                        <p class="text-gray-600 mb-6">Pour grandes organisations</p>
+                        <h3 class="text-xl font-semibold text-neutral-900 mb-2">Enterprise</h3>
+                        <p class="text-neutral-600 mb-6">Pour grandes organisations</p>
                         <div class="mb-6">
-                            <span class="text-4xl font-bold text-gray-900">€299</span>
-                            <span class="text-gray-600">/mois</span>
+                            <span class="text-4xl font-bold text-neutral-900">€299</span>
+                            <span class="text-neutral-600">/mois</span>
                         </div>
                     </div>
 
                     <ul class="space-y-4 mb-8">
                         <li class="flex items-center space-x-3">
-                            <svg class="w-5 h-5 text-earth-500" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-accent-500" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
                                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-gray-700">Projets illimités</span>
+                            <span class="text-neutral-700">Projets illimités</span>
                         </li>
                         <li class="flex items-center space-x-3">
-                            <svg class="w-5 h-5 text-earth-500" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-accent-500" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
                                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-gray-700">100+ workers</span>
+                            <span class="text-neutral-700">100+ workers</span>
                         </li>
                         <li class="flex items-center space-x-3">
-                            <svg class="w-5 h-5 text-earth-500" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-accent-500" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
                                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-gray-700">API & intégrations</span>
+                            <span class="text-neutral-700">API & intégrations</span>
                         </li>
                         <li class="flex items-center space-x-3">
-                            <svg class="w-5 h-5 text-earth-500" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-accent-500" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
                                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-gray-700">Account manager dédié</span>
+                            <span class="text-neutral-700">Account manager dédié</span>
                         </li>
                         <li class="flex items-center space-x-3">
-                            <svg class="w-5 h-5 text-earth-500" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-5 h-5 text-accent-500" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
                                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="text-gray-700">SLA 99.9% uptime</span>
+                            <span class="text-neutral-700">SLA 99.9% uptime</span>
                         </li>
                     </ul>
 
                     <button
-                        class="w-full px-6 py-3 border-2 border-earth-300 text-earth-700 rounded-xl hover:border-earth-500 hover:text-earth-600 transition-all font-semibold transform hover:scale-105">
+                        class="w-full px-6 py-3 border-2 border-accent-300 text-accent-700 rounded-xl hover:border-accent-500 hover:text-accent-600 transition-all font-semibold transform hover:scale-105">
                         Contactez-nous
                     </button>
                 </div>
             </div>
 
             <div class="text-center mt-12 animate-fade-in-up">
-                <p class="text-gray-600 mb-4">
+                <p class="text-neutral-600 mb-4">
                     💳 Aucune carte bancaire requise pour l'essai • 🔒 Annulation à tout moment
                 </p>
-                <p class="text-sm text-gray-500">
+                <p class="text-sm text-neutral-500">
                     Économie moyenne constatée: €8,500 par projet vs gestion traditionnelle
                 </p>
             </div>
@@ -1020,14 +1031,14 @@
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in-up">
                 Prêt à transformer vos projets en Afrique ?
             </h2>
-            <p class="text-xl text-orange-100 mb-8 max-w-2xl mx-auto animate-slide-in-right">
+            <p class="text-xl text-green-100 mb-8 max-w-2xl mx-auto animate-slide-in-right">
                 Rejoignez 200+ entrepreneurs diaspora qui utilisent Abosure pour gérer leurs projets avec confiance et
                 efficacité.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
                 <button
-                    class="px-8 py-4 bg-white text-primary-600 rounded-xl hover:bg-gray-50 transition-all font-semibold text-lg shadow-lg transform hover:scale-105 animate-pulse-glow">
+                    class="px-8 py-4 bg-white text-primary-600 rounded-xl hover:bg-neutral-50 transition-all font-semibold text-lg shadow-lg transform hover:scale-105 animate-pulse-glow">
                     Essai gratuit 14 jours
                 </button>
                 <button
@@ -1036,14 +1047,14 @@
                 </button>
             </div>
 
-            <p class="text-orange-100 text-sm animate-fade-in">
+            <p class="text-green-100 text-sm animate-fade-in">
                 Configuration en 5 minutes • Support en français • Données hébergées en Europe
             </p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact" class="bg-gray-900 text-white py-16">
+    <footer id="contact" class="bg-neutral-900 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8">
                 <!-- Company Info -->
@@ -1054,28 +1065,28 @@
                         </div>
                         <span class="text-xl font-bold">Abosure</span>
                     </div>
-                    <p class="text-gray-400 mb-6 max-w-md">
+                    <p class="text-neutral-400 mb-6 max-w-md">
                         La plateforme qui révolutionne la gestion de projets transfrontaliers pour la diaspora
                         africaine.
                         Contrôlez vos investissements avec confiance depuis l'Europe.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#"
-                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-500 transition-all transform hover:scale-110">
+                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-primary-500 transition-all transform hover:scale-110">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                             </svg>
                         </a>
                         <a href="#"
-                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-secondary-500 transition-all transform hover:scale-110">
+                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-secondary-500 transition-all transform hover:scale-110">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
                         </a>
                         <a href="#"
-                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-sunset-500 transition-all transform hover:scale-110">
+                            class="w-10 h-10 bg-neutral-800 rounded-lg flex items-center justify-center hover:bg-accent-500 transition-all transform hover:scale-110">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.935 0 4.104-2.594 7.464-6.18 7.464-1.211 0-2.357-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.001 12.017 24c6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001.012.001 12.017 0z" />
@@ -1089,19 +1100,19 @@
                     <h4 class="font-semibold text-white mb-4">Produit</h4>
                     <ul class="space-y-2">
                         <li><a href="#features"
-                                class="text-gray-400 hover:text-primary-400 transition-colors transform hover:translate-x-1">Fonctionnalités</a>
+                                class="text-neutral-400 hover:text-primary-400 transition-colors transform hover:translate-x-1">Fonctionnalités</a>
                         </li>
                         <li><a href="#pricing"
-                                class="text-gray-400 hover:text-secondary-400 transition-colors transform hover:translate-x-1">Tarifs</a>
+                                class="text-neutral-400 hover:text-secondary-400 transition-colors transform hover:translate-x-1">Tarifs</a>
                         </li>
                         <li><a href="#"
-                                class="text-gray-400 hover:text-earth-400 transition-colors transform hover:translate-x-1">Sécurité</a>
+                                class="text-neutral-400 hover:text-accent-400 transition-colors transform hover:translate-x-1">Sécurité</a>
                         </li>
                         <li><a href="#"
-                                class="text-gray-400 hover:text-sunset-400 transition-colors transform hover:translate-x-1">API</a>
+                                class="text-neutral-400 hover:text-primary-400 transition-colors transform hover:translate-x-1">API</a>
                         </li>
                         <li><a href="#"
-                                class="text-gray-400 hover:text-primary-400 transition-colors transform hover:translate-x-1">Intégrations</a>
+                                class="text-neutral-400 hover:text-secondary-400 transition-colors transform hover:translate-x-1">Intégrations</a>
                         </li>
                     </ul>
                 </div>
@@ -1110,17 +1121,17 @@
                 <div>
                     <h4 class="font-semibold text-white mb-4">Contact</h4>
                     <ul class="space-y-2">
-                        <li class="text-gray-400">
+                        <li class="text-neutral-400">
                             <span class="font-medium">Email:</span><br>
                             <a href="mailto:hello@abosure.com"
                                 class="hover:text-primary-400 transition-colors">hello@abosure.com</a>
                         </li>
-                        <li class="text-gray-400">
+                        <li class="text-neutral-400">
                             <span class="font-medium">Téléphone:</span><br>
                             <a href="tel:+33123456789" class="hover:text-secondary-400 transition-colors">+33 1 23 45 67
                                 89</a>
                         </li>
-                        <li class="text-gray-400">
+                        <li class="text-neutral-400">
                             <span class="font-medium">Adresse:</span><br>
                             Paris, France
                         </li>
@@ -1129,17 +1140,17 @@
             </div>
 
             <!-- Bottom Footer -->
-            <div class="border-t border-gray-800 mt-12 pt-8">
+            <div class="border-t border-neutral-800 mt-12 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    <p class="text-neutral-400 text-sm mb-4 md:mb-0">
                         © 2024 Abosure. Tous droits réservés.
                     </p>
                     <div class="flex space-x-6 text-sm">
-                        <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">Politique de
+                        <a href="#" class="text-neutral-400 hover:text-primary-400 transition-colors">Politique de
                             confidentialité</a>
-                        <a href="#" class="text-gray-400 hover:text-secondary-400 transition-colors">Conditions
+                        <a href="#" class="text-neutral-400 hover:text-secondary-400 transition-colors">Conditions
                             d'utilisation</a>
-                        <a href="#" class="text-gray-400 hover:text-earth-400 transition-colors">RGPD</a>
+                        <a href="#" class="text-neutral-400 hover:text-accent-400 transition-colors">RGPD</a>
                     </div>
                 </div>
             </div>
@@ -1188,11 +1199,11 @@
             // Update dots
             dots.forEach((dot, i) => {
                 if (i === index) {
-                    dot.classList.remove('bg-gray-300');
+                    dot.classList.remove('bg-neutral-300');
                     dot.classList.add('bg-primary-500');
                 } else {
                     dot.classList.remove('bg-primary-500');
-                    dot.classList.add('bg-gray-300');
+                    dot.classList.add('bg-neutral-300');
                 }
             });
 
@@ -1416,7 +1427,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             `;
-            mobileMenuToggle.className = 'md:hidden p-2 text-gray-600 hover:text-primary-600 transition-colors';
+            mobileMenuToggle.className = 'md:hidden p-2 text-neutral-600 hover:text-primary-600 transition-colors';
 
             // Add to navigation
             nav.appendChild(mobileMenuToggle);
@@ -1443,7 +1454,7 @@
         style.textContent = `
             .keyboard-nav button:focus,
             .keyboard-nav a:focus {
-                outline: 2px solid #ff8b29;
+                outline: 2px solid #22c55e;
                 outline-offset: 2px;
             }
             
@@ -1548,7 +1559,7 @@
         }
 
         .hover-glow:hover {
-            box-shadow: 0 0 30px rgba(255, 139, 41, 0.3);
+            box-shadow: 0 0 30px rgba(34, 197, 94, 0.3);
         }
 
         .text-shadow {

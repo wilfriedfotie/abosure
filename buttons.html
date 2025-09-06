@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variations de Boutons Africains</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(255, 165, 0, 0.6);
+            }
+        }
+
+        .animate-pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .shimmer::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: shimmer 2s infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 min-h-screen py-8">
+    <div class="max-w-6xl mx-auto px-4">
+        <h1 class="text-4xl font-bold text-white text-center mb-12">
+            Variations de Boutons - Soleil Africain & Confiance
+        </h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Bouton Original -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Original</h3>
+                <button class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105 animate-pulse-glow
+                             bg-gradient-to-br from-[#f4a942] via-[#e98c1a] to-[#43302b]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Terre Cuite Moderne -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Terre Cuite Moderne</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                             bg-gradient-to-br from-[#d2691e] via-[#cd853f] to-[#8b4513] hover:from-[#e27d32] hover:via-[#d4954f] hover:to-[#9b5523]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Coucher de Soleil Doux -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Coucher de Soleil</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                             bg-gradient-to-br from-[#ffa500] via-[#ff8c42] to-[#e67e22] hover:from-[#ffb520] hover:via-[#ff9c52] hover:to-[#f68e32]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Or Mat Africain -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Or Mat Africain</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                             bg-gradient-to-br from-[#daa520] via-[#b8860b] to-[#996515] hover:from-[#e4b530] hover:via-[#c8960b] hover:to-[#a97525]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Ambre Chaleureux -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Ambre Chaleureux</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                             bg-gradient-to-br from-[#ffbf69] via-[#ff9500] to-[#cc7a00] hover:from-[#ffcf79] hover:via-[#ffa510] hover:to-[#dc8a10]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Savane Dorée -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Savane Dorée</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                             bg-gradient-to-br from-[#f4d03f] via-[#f39c12] to-[#d68910] hover:from-[#f6d84f] hover:via-[#f5ac22] hover:to-[#e69920]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Bronze Noble -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Bronze Noble</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                             bg-gradient-to-br from-[#cd7f32] via-[#b8731c] to-[#8b5a1a] hover:from-[#dd8f42] hover:via-[#c8832c] hover:to-[#9b6a2a]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Cuivre Africain -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Cuivre Africain</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                             bg-gradient-to-br from-[#b87333] via-[#a0522d] to-[#8b4513] hover:from-[#c88343] hover:via-[#b0623d] hover:to-[#9b5523]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Sable du Sahara -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Sable du Sahara</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                             bg-gradient-to-br from-[#f4e4bc] via-[#deb887] to-[#cd853f] text-gray-800 hover:text-white hover:from-[#f6e8c6] hover:via-[#e8c897] hover:to-[#dd954f]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Version avec Shimmer -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Or avec Shimmer</h3>
+                <button class="relative overflow-hidden w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105 shimmer
+                             bg-gradient-to-br from-[#daa520] via-[#b8860b] to-[#996515]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Version Outline -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Outline Doré</h3>
+                <button
+                    class="w-full px-8 py-4 rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                             border-2 border-[#daa520] text-[#daa520] hover:bg-[#daa520] hover:text-white bg-transparent">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Version Soft Glow -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Soft Glow</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl transition-all font-semibold text-lg transform hover:scale-105
+                             bg-gradient-to-br from-[#ffbf69] via-[#ff9500] to-[#cc7a00] shadow-lg shadow-orange-500/25 hover:shadow-orange-500/50">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Version Néon Subtil -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Néon Subtil</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                             bg-gradient-to-br from-[#f4d03f] via-[#f39c12] to-[#d68910] border border-yellow-400/30 shadow-lg shadow-yellow-500/20">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Version 3D -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Effet 3D</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105 active:scale-95
+                             bg-gradient-to-br from-[#cd7f32] via-[#b8731c] to-[#8b5a1a] shadow-inner border-t border-yellow-600/20">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Version Minimaliste -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Minimaliste</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                                             bg-gradient-to-br from-[#d2691e] via-[#cd853f] to-[#8b4513] hover:from-[#e27d32] hover:via-[#d4954f] hover:to-[#9b5523]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+            <!-- Version Gradient Inversé -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h3 class="text-white font-semibold mb-4">Gradient Inversé</h3>
+                <button
+                    class="w-full px-8 py-4 text-white rounded-xl hover:shadow-xl transition-all font-semibold text-lg transform hover:scale-105
+                             bg-gradient-to-tl from-[#8b4513] via-[#cd853f] to-[#daa520] hover:from-[#9b5523] hover:via-[#dd954f] hover:to-[#eab530]">
+                    Démarrer gratuitement
+                </button>
+            </div>
+
+        </div>
+
+        <div class="mt-12 text-center">
+            <p class="text-gray-400">
+                Toutes ces variations évoquent la chaleur du soleil africain et inspirent confiance,
+                <br>tout en restant douces pour les yeux.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

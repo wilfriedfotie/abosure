@@ -269,17 +269,17 @@
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-neutral-200/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-around items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center space-x-2">
                     <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center animate-pulse-glow">
-                        <span class="text-white font-bold text-sm">A</span>
+                        <span class="text-white font-bold text-sm animate-float">A</span>
                     </div>
                     <span class="text-xl font-bold text-neutral-900">Abosure</span>
                 </div>
 
                 <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center text-xl space-x-8">
                     <a href="#features"
                         class="text-neutral-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Fonctionnalités</a>
                     <a href="#how-it-works"
@@ -294,11 +294,11 @@
 
                 <!-- CTA Buttons -->
                 <div class="flex items-center space-x-4">
-                    <button class="hidden sm:block px-4 py-2 text-primary-600 hover:text-primary-700 transition-colors">
+                    <button class="hidden sm:block px-4 py-2 border border-neutral-200 rounded-xl text-primary-600 hover:text-primary-700 transition-colors">
                         Connexion
                     </button>
                     <button
-                        class="px-6 py-2 gradient-bg text-white rounded-lg hover:shadow-lg transition-all font-medium transform hover:scale-105">
+                        class="px-6 py-1 gradient-bg text-white rounded-lg hover:shadow-lg transition-all font-medium transform hover:scale-105">
                         Essai gratuit
                     </button>
                 </div>
@@ -322,7 +322,7 @@
                 <div class="animate-fade-in-up">
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">
                         Vos projets en Afrique,
-                        <span class="gradient-text">sous contrôle</span>
+                        <span class="gradient-text block">sous contrôle</span>
                         depuis l'Europe
                     </h1>
 
@@ -1418,23 +1418,78 @@
         // Start social proof cycling
         setInterval(cycleSocialProof, 8000);
 
-        // Mobile menu functionality (if needed)
-        const createMobileMenu = () => {
-            const nav = document.querySelector('nav .flex.justify-between');
-            const mobileMenuToggle = document.createElement('button');
-            mobileMenuToggle.innerHTML = `
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            `;
-            mobileMenuToggle.className = 'md:hidden p-2 text-neutral-600 hover:text-primary-600 transition-colors';
+        // Mobile menu functionality
+const createMobileMenu = () => {
+  const nav = document.querySelector("nav .flex.justify-around");
 
-            // Add to navigation
-            nav.appendChild(mobileMenuToggle);
-        };
+  if (!nav) return; // Sécurité si nav n'existe pas
+
+  // Bouton toggle (menu burger)
+  const mobileMenuToggle = document.createElement("button");
+  mobileMenuToggle.innerHTML = `
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+        d="M4 6h16M4 12h16M4 18h16">
+      </path>
+    </svg>
+  `;
+  mobileMenuToggle.className =
+    "flex md:hidden p-2 text-neutral-600 hover:text-primary-600 transition-colors duration-700";
+
+  // Bouton close (croix)
+  const mobileMenuClose = document.createElement("button");
+  mobileMenuClose.innerHTML = `
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+        d="M6 18L18 6M6 6l12 12">
+      </path>
+    </svg>
+  `;
+  mobileMenuClose.className =
+    "flex md:hidden p-2 text-neutral-600 hover:text-primary-600 transition-colors self-end duration-700";
+
+  // Sauvegarder le contenu initial du nav
+  const originalNav = nav.innerHTML;
+
+  // Ouvrir menu
+  mobileMenuToggle.addEventListener("click", () => {
+    nav.className = "flex flex-col gap-4 p-4 bg-white shadow-md absolute top-16 left-0 right-0 z-50";
+
+    nav.innerHTML = `
+      <div class="flex flex-col items-center gap-4 text-md duration-700">
+        <div><a href="#features" class="text-neutral-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Fonctionnalités</a></div>
+        <div><a href="#how-it-works" class="text-neutral-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Comment ça marche</a></div>
+        <div><a href="#pricing" class="text-neutral-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Tarifs</a></div>
+        <div><a href="#contact" class="text-neutral-600 hover:text-primary-600 transition-colors hover:scale-105 transform">Contact</a></div>
+      </div>
+      <div class="flex flex-col gap-2 mt-4">
+        <button class="px-4 py-2 border border-neutral-200 rounded-xl text-primary-600 hover:text-primary-700 transition-colors">
+          Connexion
+        </button>
+        <button class="px-6 py-2 gradient-bg text-white rounded-lg hover:shadow-lg transition-all font-medium transform hover:scale-105">
+          Essai gratuit
+        </button>
+      </div>
+    `;
+
+    // Ajout du bouton close
+    nav.prepend(mobileMenuClose);
+  });
+
+  // Fermer menu
+  mobileMenuClose.addEventListener("click", () => {
+    nav.className = "flex justify-between"; // rétablit les classes d'origine
+    nav.innerHTML = originalNav; // rétablit le contenu d'origine
+    nav.appendChild(mobileMenuToggle); // remettre le bouton burger
+  });
+
+  // Ajouter bouton burger au nav initial
+  nav.appendChild(mobileMenuToggle);
+};
+
 
         // Initialize mobile menu if screen is small
-        if (window.innerWidth < 768) {
+        if (window.innerWidth <= 768) {
             createMobileMenu();
         }
 

@@ -65,3 +65,36 @@ if (window.innerWidth < 768) {
   console.log("Mobile view");
   creatMenu();
 }
+
+// Enhanced navigation scroll effect
+window.addEventListener("scroll", () => {
+  const windowScroll = window.scrollY;
+  if (windowScroll > 50) {
+    nav.classList.add(
+      "bg-white/80",
+      "shadow-lg",
+      "duration-300",
+      "py-2",
+      "mt-4",
+      "sticky",
+      "top-0",
+      "w-full",
+      "z-50"
+    );
+  } else {
+    nav.classList.remove(
+      "bg-white/80",
+      "shadow-lg",
+      "duration-300",
+      "py-2",
+      "mt-4",
+      "sticky",
+      "top-0",
+      "w-full",
+      "z-50"
+    );
+  }
+});
+
+const year = document.getElementById("year");
+year.innerText = new Date().getFullYear();

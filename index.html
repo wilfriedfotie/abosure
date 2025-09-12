@@ -106,6 +106,8 @@
         };
     </script>
 
+    
+
     <!-- Structured Data -->
     <script type="application/ld+json">
       {
@@ -145,7 +147,7 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="flex max-w-7xl mx-auto p-6 justify-between items-center">
+    <nav class="flex max-w-7xl mx-auto p-6 justify-between items-center sticky top-0 z-50">
         <!-- Logo -->
         <div class="flex items-end">
             <div class="flex items-center gap-2">
@@ -182,7 +184,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto mt-20 p-8 flex flex-col md:flex-row items-center justify-between gap-16">
+    <section
+        class="img-container max-w-7xl mx-auto mt-20 p-8 flex flex-col md:flex-row items-center justify-between gap-16">
         <!-- Left Section -->
         <div class="md:w-1/2 text-center md:text-left space-y-8">
             <h1 class="text-4xl md:text-5xl text-gray-800 leading-tight">
@@ -294,21 +297,25 @@
     </section>
 
     <!-- Feature section -->
-     <section class="max-w-7xl bg-white mx-auto mt-20 p-8 flex flex-col justify-center gap-8 shadow-lg">
+    <section
+        class="img-container max-w-7xl bg-white mx-auto mt-20 p-8 flex flex-col justify-center gap-8 shadow-lg rounded-lg">
         <div class="flex justify-between gap-4  text-center p-6  shadow-sm hover:shadow-lg transition">
             <h1 class="text-3xl font-semibold">Everything you need to manage your projects</h1>
-            <p>A comprehensive platform that combines authenticated evidence, financial management, and a marketplace for African talent</p>
+            <p>A comprehensive platform that combines authenticated evidence, financial management, and a marketplace
+                for African talent</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="flex flex-col p-6  rounded-lg shadow-sm hover:shadow-lg transition">
                 <div class="mb-4 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
                         <path d="M8 12l2 2l4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </div>
                 <h2 class="text-xl font-semibold">Authenticated Evidence</h2>
-                <p class="mt-2">Photos and videos geolocated with AI anti-fraud validation. Automatic trust score for each piece of evidence.</p>
+                <p class="mt-2">Photos and videos geolocated with AI anti-fraud validation. Automatic trust score for
+                    each piece of evidence.</p>
                 <ul class="list-disc list-inside mt-2 text-gray-600">
                     <li>Automatic geolocation</li>
                     <li>AI anti-fraud detection</li>
@@ -317,11 +324,13 @@
             </div>
             <div class="flex flex-col p-6  rounded-lg shadow-sm hover:shadow-lg transition">
                 <div class="mb-4 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
                         <path d="M12 8v4l3 2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         <path d="M8 16h8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <text x="12" y="20" text-anchor="middle" font-size="8" fill="#2A8E9E" font-family="sans-serif">€</text>
+                        <text x="12" y="20" text-anchor="middle" font-size="8" fill="#2A8E9E"
+                            font-family="sans-serif">€</text>
                     </svg>
                 </div>
                 <h2 class="text-xl font-semibold">Financial Tracking</h2>
@@ -334,15 +343,19 @@
             </div>
             <div class="flex flex-col p-6  rounded-lg shadow-sm hover:shadow-lg transition">
                 <div class="mb-4 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
-                        <path d="M7 17v-2a2 2 0 012-2h6a2 2 0 012 2v2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7 17v-2a2 2 0 012-2h6a2 2 0 012 2v2" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
                         <circle cx="12" cy="10" r="3" stroke-width="2"></circle>
-                        <path d="M5 7h14M7 7v2M17 7v2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M5 7h14M7 7v2M17 7v2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
                     </svg>
                 </div>
                 <h2 class="text-xl font-semibold">Marketplace</h2>
-                <p class="mt-2">Network of verified professionals with a rating system. Intelligent matching by skills and proximity.</p>
+                <p class="mt-2">Network of verified professionals with a rating system. Intelligent matching by skills
+                    and proximity.</p>
                 <ul class="list-disc list-inside mt-2 text-gray-600">
                     <li>Certified workers</li>
                     <li>Geographic matching</li>
@@ -351,14 +364,16 @@
             </div>
             <div class="flex flex-col p-6  rounded-lg shadow-sm hover:shadow-lg transition">
                 <div class="mb-4 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
                         <path d="M12 8v4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         <circle cx="12" cy="16" r="1.5" fill="#2A8E9E"></circle>
                     </svg>
                 </div>
                 <h2 class="text-xl font-semibold">Smart Alerts</h2>
-                <p class="mt-2">Real-time notifications for project emergencies. Automatic dissemination to qualified workers in the area.</p>
+                <p class="mt-2">Real-time notifications for project emergencies. Automatic dissemination to qualified
+                    workers in the area.</p>
                 <ul class="list-disc list-inside mt-2 text-gray-600">
                     <li>Push notifications</li>
                     <li>Automatic geofencing</li>
@@ -367,10 +382,13 @@
             </div>
             <div class="flex flex-col p-6  rounded-lg shadow-sm hover:shadow-lg </div>transition">
                 <div class="mb-4 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
-                        <path d="M8 15h8M8 9h8M12 9v6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M16 15v2a2 2 0 01-2 2H8l-4 4V7a2 2 0 012-2h12a2 2 0 012 2v8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8 15h8M8 9h8M12 9v6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M16 15v2a2 2 0 01-2 2H8l-4 4V7a2 2 0 012-2h12a2 2 0 012 2v8" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </div>
                 <h2 class="text-xl font-semibold">Integrated communication</h2>
@@ -380,15 +398,19 @@
                     <li>WhatsApp integration</li>
                     <li>Validation workflow</li>
                 </ul>
-            </div><div class="flex flex-col p-6  rounded-lg shadow-sm hover:shadow-lg transition">
+            </div>
+            <div class="flex flex-col p-6  rounded-lg shadow-sm hover:shadow-lg transition">
                 <div class="mb-4 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[#2A8E9E]" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
-                        <path d="M8 16v-4M12 16v-8M16 16v-2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8 16v-4M12 16v-8M16 16v-2" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
                     </svg>
                 </div>
                 <h2 class="text-xl font-semibold">Advanced Analytics</h2>
-                <p class="mt-2">Multi-project dashboard with real-time KPIs. Automated reports and performance insights.</p>
+                <p class="mt-2">Multi-project dashboard with real-time KPIs. Automated reports and performance insights.
+                </p>
                 <ul class="list-disc list-inside mt-2 text-gray-600">
                     <li>Real-time KPIs</li>
                     <li>PDF/Excel export</li>
@@ -396,37 +418,245 @@
                 </ul>
             </div>
         </div>
-     </section>
+    </section>
 
-     <!-- How it works -->
-      <section class="max-w-7xl bg-white mx-auto mt-32 p-8 flex flex-col justify-center gap-8 shadow-lg">
+    <!-- How it works -->
+    <section
+        class="img-container max-w-7xl bg-white mx-auto mt-32 p-8 flex flex-col justify-center gap-8 shadow-lg rounded-lg">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-semibold">How It Works</h2>
             <p class="mt-4 text-gray-600">Manage your projects in Africa from Europe in 3 simple steps</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="flex flex-col bg-[#F9FAFB] items-center text-center p-6 rounded-lg shadow-sm hover:shadow-lg transition">
+            <div
+                class="flex flex-col bg-[#F9FAFB] items-center text-center p-6 rounded-lg shadow-sm hover:shadow-lg transition">
                 <div class="mb-4 flex items-center justify-center w-16 h-16 bg-[#E9F3F4] rounded-full">
                     <span class="text-2xl font-bold text-[#2A8E9E]">1</span>
                 </div>
                 <h3 class="text-xl font-semibold">Sign Up & Create Project</h3>
                 <p class="mt-2 text-gray-600">Register and set up your project with budget and milestones.</p>
             </div>
-            <div class="flex flex-col bg-[#F9FAFB] items-center text-center p-6 rounded-lg shadow-sm hover:shadow-lg transition">
+            <div
+                class="flex flex-col bg-[#F9FAFB] items-center text-center p-6 rounded-lg shadow-sm hover:shadow-lg transition">
                 <div class="mb-4 flex items-center justify-center w-16 h-16 bg-[#E9F3F4] rounded-full">
                     <span class="text-2xl font-bold text-[#2A8E9E]">2</span>
                 </div>
                 <h3 class="text-xl font-semibold">Collect Evidence & Track Finances</h3>
                 <p class="mt-2 text-gray-600">Upload geolocated photos/videos and monitor expenses in real-time.</p>
             </div>
-            <div class="flex flex-col bg-[#F9FAFB] items-center text-center p-6 rounded-lg shadow-sm hover:shadow-lg transition">
+            <div
+                class="flex flex-col bg-[#F9FAFB] items-center text-center p-6 rounded-lg shadow-sm hover:shadow-lg transition">
                 <div class="mb-4 flex items-center justify-center w-16 h-16 bg-[#E9F3F4] rounded-full">
                     <span class="text-2xl font-bold text-[#2A8E9E]">3</span>
                 </div>
                 <h3 class="text-xl font-semibold">Hire Skilled Workers</h3>
                 <p class="mt-2 text-gray-600">Find
 
-      </section>
+    </section>
+
+    <!-- Pricing -->
+    <section
+        class="img-container max-w-7xl bg-white mx-auto mt-32 p-8 flex flex-col justify-center gap-8 shadow-md rounded-lg open-sans-unique-quiet">
+        <div class="text-center mb-12">
+            <h2 class="text-1xl text-[#2A8E9E] font-semibold">Our mission</h2>
+            <p class="mt-4 text-3xl font-semibold open-sans-unique-quiet text-gray-600">We aim to empower <br />
+                managers in Africa by providing a <br />comprehensive platform for tracking and managing projects
+                remotely.</p>
+        </div>
+        <div class="flex justify-around">
+            <div class="flex flex-col justify-center items-center gap-1">
+                <p class="text-5xl open-sans-unique">
+                    24%
+                </p>
+                <p class="text-1xl open-sans-unique-quiet">
+                    Revenue business growth in 2023
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-1">
+                <p class="text-5xl open-sans-unique">180K</p>
+                <p class="text-1xl open-sans-unique-quiet">In annual revenue</p>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-1">
+                <p class="text-5xl open-sans-unique">10+</p>
+                <p class="text-1xl open-sans-unique-quiet">Month on runway</p>
+            </div>
+        </div>
+        <div class="text-center mb-12 mt-12">
+            <p class="mt-4 text-gray-600">Choose the plan that fits your needs. Upgrade anytime as your projects grow.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col bg-gray-100  rounded-lg shadow-lg hover:shadow-xl transition p-6">
+                <h3 class="text-xl font-semibold mb-4">Basic</h3>
+                <p class="text-4xl font-bold text-[#2A8E9E] mb-4">€29<span
+                        class="text-base font-normal text-gray-600">/month</span></p>
+                <ul class="list-disc list-inside mb-6 text-gray-600">
+                    <li>Up to 3 projects</li>
+                    <li>Authenticated evidence</li>
+                    <li>Financial tracking</li>
+                    <li>Access to marketplace</li>
+                </ul>
+                <a href="#"
+                    class="mt-auto bg-[#2A8E9E] text-white px-6 py-3 rounded-lg hover:bg-[#246f7a] transition font-semibold shadow text-center">Get
+                    Started</a>
+            </div>
+            <div
+                class="flex flex-col  bg-gradient-to-r from-[#2A8E9E] to-[#246f7a] text-white rounded-lg shadow-lg hover:shadow-xl transition p-6">
+                <h3 class="text-xl font-semibold mb-4">Enterprise</h3>
+                <p class="text-4xl font-bold text-[#246f7b] mb-4">Contact Us</p>
+                <ul class="list-disc list-inside mb-6 text-white">
+                    <li>Unlimited projects</li>
+                    <li>All Pro features</li>
+                    <li>Dedicated account manager</li>
+                    <li>Custom integrations</li>
+                </ul>
+                <a href="#"
+                    class="mt-auto bg-[#2A8E9E] text-white px-6 py-3 rounded-lg hover:bg-[#246f7a] transition font-semibold shadow text-center">Contact
+                    Sales</a>
+            </div>
+        </div>
+        <div
+            class="flex flex-col md:flex-row gap-2 justify-between items-center text-white mb-12 mt-12 bg-[#2A8E9E]/50 p-6 rounded-lg shadow-sm hover:shadow-lg transition">
+            <div>
+                <h2 class="text-1xl font-semibold">Get Started Today</h2>
+                <p class="mt-6 mb-6 text-bold text-5xl">Ready to level up your <br />business process?</p>
+                <p>Support your team with our powerful tools and support your business with simple invoicing, powerful
+                    <br />reporting, and more and cashflow management tool. </p>
+            </div>
+            <div class="flex space-x-4">
+                <button
+                    class="bg-[#2A8E9E] text-white px-6  rounded-lg hover:bg-[#246f7a] transition font-semibold shadow h-12 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Get Started
+                </button>
+                <button
+                    class="text-white px-6 py-3 border border-[#2A8E9E] rounded-lg hover:bg-[#246f7a] transition font-semibold shadow h-12 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <circle cx="12" cy="12" r="10" stroke-width="2" />
+                        <path d="M8 12l2 2l4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer id="contact" class=" text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <!-- Company Info -->
+                    <div class="md:col-span-2">
+                        <div class="flex items-end mb-6">
+                            <div class="flex items-center gap-2">
+                                <div class="relative">
+                                    <span
+                                        class="text-6xl text-[#2A8E9E] font-extrabold bg-gradient-to-r from-[#2A8E9E] to-[#14b8a6] text-white px-3 rounded-lg shadow-md">A</span>
+                                    <div class="w-12 h-2 bg-[#E9F3F4] absolute bottom-0 right-0"></div>
+                                </div>
+                            </div>
+                            <div class="text-3xl font-bold text-[#2A8E9E] open-sans-uniquetracking-wide">
+                                bosure
+                            </div>
+                        </div>
+                        <p class="text-neutral-400 mb-6 max-w-md">
+                            La plateforme qui révolutionne la gestion de projets transfrontaliers pour la diaspora
+                            africaine.
+                            Contrôlez vos investissements avec confiance depuis l'Europe.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="w-10 h-10 bg-[#2A8E9E] rounded-lg flex items-center justify-center hover:bg-primary-500 transition-all transform hover:scale-110">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-[#2A8E9E] rounded-lg flex items-center justify-center hover:bg-secondary-500 transition-all transform hover:scale-110">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-[#2A8E9E] rounded-lg flex items-center justify-center hover:bg-accent-500 transition-all transform hover:scale-110">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.935 0 4.104-2.594 7.464-6.18 7.464-1.211 0-2.357-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.001 12.017 24c6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001.012.001 12.017 0z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="font-semibold text-white mb-4">Produit</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#features"
+                                    class="text-neutral-400 hover:text-primary-400 transition-colors transform hover:translate-x-1">Fonctionnalités</a>
+                            </li>
+                            <li><a href="#pricing"
+                                    class="text-neutral-400 hover:text-secondary-400 transition-colors transform hover:translate-x-1">Tarifs</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-neutral-400 hover:text-accent-400 transition-colors transform hover:translate-x-1">Sécurité</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-neutral-400 hover:text-primary-400 transition-colors transform hover:translate-x-1">API</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-neutral-400 hover:text-secondary-400 transition-colors transform hover:translate-x-1">Intégrations</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div>
+                        <h4 class="font-semibold text-white mb-4">Contact</h4>
+                        <ul class="space-y-2">
+                            <li class="text-neutral-400">
+                                <span class="font-medium">Email:</span><br>
+                                <a href="mailto:hello@abosure.com"
+                                    class="hover:text-primary-400 transition-colors">hello@abosure.com</a>
+                            </li>
+                            <li class="text-neutral-400">
+                                <span class="font-medium">Téléphone:</span><br>
+                                <a href="tel:+33123456789" class="hover:text-secondary-400 transition-colors">+33 1 23
+                                    45 67
+                                    89</a>
+                            </li>
+                            <li class="text-neutral-400">
+                                <span class="font-medium">Adresse:</span><br>
+                                Paris, France
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bottom Footer -->
+                <div class="border-t border-neutral-800 mt-12 pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <p class="text-neutral-400 text-sm mb-4 md:mb-0">
+                            © <span [#2A8E9E]"></span> Abosure. Tous droits réservés.
+                        </p>
+                        <div class="flex space-x-6 text-sm">
+                            <a href="#" class="text-neutral-400 hover:text-primary-400 transition-colors">Politique de
+                                confidentialité</a>
+                            <a href="#" class="text-neutral-400 hover:text-secondary-400 transition-colors">Conditions
+                                d'utilisation</a>
+                            <a href="#" class="text-neutral-400 hover:text-accent-400 transition-colors">RGPD</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
 
     <script src="index.js"></script>
 </body>
